@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempat Wisata</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <nav class="container navbar navbar-expand-lg fixed-top bg-white">
+        <a class="navbar-brand text-success" href="../index.html"><b>AgroTour</b></a>
+        <div class="d-lg-none d-md-block d-sm-block">
+            <a class="btn btn-success" href="../pages/Login.html">Masuk</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Beranda</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../pages/Place.html">Tempat Wisata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/Product.html">Produk Lokal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/Contact.html">Kontak</a>
+                </li>
+                <li  class="nav-item">
+                    <a id="authButton" class="btn btn-success" href="/pages/Login.html">Masuk</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="homepage" style="padding-top: 80px; display: none;"></div>
+
+    <section>
+        <div class="container mt-3"  style="padding-top: 50px; padding-bottom: 10px;">
+            <div class="row">
+                <div class="justify-content-center">
+                    <h1 class="text-center">Jelajahi Keindahan Desa Leuwimalang</h1>
+                    <p class="lead fs-5 text-center">Desa Leuwimalang menawarkan pengalaman agrowisata yang beragam. Temukan keindahan alam dan budaya disetiap sudut desa kami.</p>
+                </div>
+            </div>
+        </div>   
+    </section>
+
+    <section class="container justify-content-center">
+        <div id="placeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mx-1" style="width: 100%;">
+                                <img src="https://atourin.obs.ap-southeast-3.myhuaweicloud.com/images/destination/bogor/curug-naga-profile1695539041.jpeg?x-image-process=image/resize,p_100,limit_1/imageslim" class="card-img-top" alt="Tempat Wisata 1">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Wahana Curug Naga</h5>
+                                    <p class="card-text text-justify">Terletak ditengah hutan yang asri, Wahana Curug Naga menawarkan petualangan menyusuri aliran sungai dan menikmati air terjun yang eksotis. Tempat yang sempurna untuk hiking dan berendam dikolam alami.</p>
+                                    <div class="mt-auto d-flex justify-content-end">
+                                        <a href="https://maps.app.goo.gl/xkT4geUH58DvhnU26" target="_blank" class="btn btn-outline-dark">Lihat Peta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mx-1" style="width: 100%;">
+                                <img src="https://picture.triptrus.com/image/2014/06/perkebunan-teh-gunung-mas-2.jpeg" class="card-img-top" alt="Tempat Wisata 2">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Perkebunan Teh Gunung Mas</h5>
+                                    <p class="card-text">Nikmati keindahan hamparan hijau Perkebunan Teh Gunung Mas. Disini, anda bisa berjalan-jalan diantara kebun teh, mengikuti tur pabrik teh, dan mencicipi teh segar sambil menikmati panorama pegunungan.</p>
+                                    <div class="mt-auto d-flex justify-content-end">
+                                        <a href="https://maps.app.goo.gl/FTLQYfMLJHVnFdA26" target="_blank" class="btn btn-outline-dark">Lihat Peta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mx-1" style="width: 100%;">
+                                <img src="https://o-cdn-cas.oramiland.com/parenting/images/curug_panjang.width-800.format-webp.webp" class="card-img-top" alt="Tempat Wisata 3">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Curug Panjang</h5>
+                                    <p class="card-text">Curug Panjang menyuguhkan pengalaman unik dengan aliran air terjun yang melebar, menciptakan pemandangan spektakuler. Tempat ini cocok untuk aktivitas trekking ringan dan bermain air dikolam-kolam yang terbentuk dibawahnya.</p>
+                                    <div class="mt-auto d-flex justify-content-end">
+                                        <a href="https://maps.app.goo.gl/MgKTXvYdnayYHeAD6" target="_blank" class="btn btn-outline-dark">Lihat Peta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mx-1" style="width: 100%;">
+                                <img src="https://asset.kompas.com/crops/3HIEB9r3v9C55EW5nN4oQtGufCA=/0x429:1080x1149/750x500/data/photo/2022/02/20/6211c0000290e.jpeg" class="card-img-top" alt="Tempat Wisata 4">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Curug Cilember</h5>
+                                    <p class="card-text">Curug Cilember terkenal dengan 7 tingkat air terjun yang indah, masing-masing memiliki pesonanya sendiri. Dikelilingi oleh hutan Pinus, tempat ini menjadi destinasi favorit untuk camping dan piknik keluarga.</p>
+                                    <div class="mt-auto d-flex justify-content-end">
+                                        <a href="https://maps.app.goo.gl/EC9jZRthqREpzmfj8" target="_blank" class="btn btn-outline-dark">Lihat Peta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mx-1" style="width: 100%;">
+                                <img src="https://media.suara.com/pictures/970x544/2023/07/21/58145-the-ranch-instagramcomattheranchpuncakbogor.jpg" class="card-img-top" alt="Tempat Wisata 5">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">The Ranch</h5>
+                                    <p class="card-text">Tempat wisata keluarga yang menghadirkan suasana ala peternakan Eropa. The Ranch Menawarkan aktivitas berkuda, taman bunga, serta area bermain anak, menjadikannya tujuan wisata yang menyenangkan bagi semua kalangan.</p>
+                                    <div class="mt-auto d-flex justify-content-end">
+                                        <a href="https://maps.app.goo.gl/rRAij4xyZCpXd479A" target="_blank" class="btn btn-outline-dark">Lihat Peta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4">
+                            <div class="card mx-1" style="width: 100%;">
+                                <img src="https://ekabo.bogorkab.go.id/uploads/6400225ca1e00_1677730396.jpg" class="card-img-top" alt="Tempat Wisata 6">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title">Taman Wisata Matahari</h5>
+                                    <p class="card-text">Sebagai taman wisata yang lengkap, Taman Wisata Matahari menawrkan berbagai wahana seru seperti perahu dayung, permainan air, dan area edukasi pertanian. Sangat cocok untuk rekreasi keluarga dengan banyak pilihan aktivitas.</p>
+                                    <div class="mt-auto d-flex justify-content-end">
+                                        <a href="https://maps.app.goo.gl/yTMVBfMc3gfVWmHw6" target="_blank" class="btn btn-outline-dark">Lihat Peta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#placeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#placeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="text-center p-4">
+            &copy;2024
+        </div>
+    </footer>
+    
+    <script src="../assets/home.js"></script>
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

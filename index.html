@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+    <nav class="container navbar navbar-expand-lg fixed-top bg-white">
+        <a class="navbar-brand text-success" href="index.html"><b>AgroTour</b></a>
+        <div class="d-lg-none d-md-block d-sm-block">
+            <a id="mAuthButton" class="btn btn-success" href="/pages/Login.html">Masuk</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/pages/Place.html">Tempat Wisata</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/Product.html">Produk Lokal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/Contact.html">Kontak</a>
+                </li>
+                <li  class="nav-item">
+                    <a id="authButton" class="btn btn-success" href="/pages/Login.html">Masuk</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="homepage" style="padding-top: 80px; display: none;"></div>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 pt-5">
+                    <h1>Desa Leuwimalang</h1>
+                    <br>
+                    <p class="lead fs-4"><b>Desa Leuwimalang</b> adalah destinasi agrowisata yang menawarkan keindahan alam, budaya lokal, dan pengalaman wisata pertanian yang berkelanjutan. Kunjungi desa kami untuk menikmati wisata alam dan produk lokal yang autentik.</p>
+                    <br>
+                    <a href="/pages/Place.html" class="btn btn-success">Jelajahi Wisata</a>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center" style="padding-top: 40px;">
+                    <img src="https://o-cdn-cas.oramiland.com/parenting/images/Taman_Riung_Gunung.width-800.format-webp.webp" style="height: 600px; width: 500px;" alt="Desa Leuwimalang" class="img-fluid">
+                </div>
+            </div>
+    </section>
+
+    <footer class="footer">
+        <div class="text-center p-4">
+            &copy;2024
+        </div>
+    </footer>
+
+    <script src="/assets/home.js"></script>
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>
