@@ -8,7 +8,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
     localStorage.setItem("username", username);
 
-    window.location.href = "../index.html";
+    window.location.href = "/Hacathon-Static/index.html";
 });
 
 

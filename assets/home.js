@@ -27,9 +27,9 @@ window.onload = function() {
         };
     } else {
         authButton.innerText = 'Masuk';
-        authButton.href = '/pages/Login.html';
+        authButton.href = '/Hackathon-Static/pages/Login.html';
 
         mAuthButton.innerText = 'Masuk';
-        mAuthButton.href = '/pages/Login.html';
+        mAuthButton.href = '/Hackathon-Static/pages/Login.html';
     }
 };
